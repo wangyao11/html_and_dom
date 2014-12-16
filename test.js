@@ -2,10 +2,7 @@ function countGarde() {
   var acount = 0;
 
   acount += getCompletionCount('统一建模语言','1_1');
-  acount += getCompletionCount('封装性','1_2_1');
-  acount += getCompletionCount('继承性','1_2_2');
-  acount += getCompletionCount('多态性','1_2_3');
-
+  acount += getCompletion2Count(['1_2_1','1_2_2','1_2_3'],['封装性','继承性','多态性']);
   acount += getChoiceCount('B','2_1');
   acount += getChoiceCount('A','2_2');
 
@@ -67,4 +64,21 @@ function getQuestionCount(answer, id) {
     count = 20;
   }
   return count;
+}
+
+function getCompletion2Count(input, corret) {
+  var total = 0;
+  var inputAnwsers = [];
+  for (var j = 0; j < input.length; j++) {
+    var inputAnwser = _.contains(inputAnwsers, document.getElementById(input[j]).value);
+    if(!inputAnwser) {
+      inputAnwsers.push(document.getElementById(input[j]).value);
+    }
+  }
+  for (var i = 0; i < inputAnwsers.length; i++) {
+    if(_.contains(corret, inputAnwsers[i])) {
+      total += 5;
+    }
+  }
+  return total;
 }
