@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>统一建模语言理论测试</title>
+    <script type="text/javascript" src="lib/lodash-2.4.1/lodash.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="answer.js"></script>
+    <script type="text/javascript" src="answers.js"></script>
+    <script type="text/javascript" src="completion.js"></script>
+    <script type="text/javascript" src="choice.js"></script>
+    <script type="text/javascript" src="multiple-choice.js"></script>
+    <script type="text/javascript" src="estimate.js"></script>
+    <script type="text/javascript" src="shortAnswer.js"></script>
+  </head>
+  <body>
+    <form>
+      <h1>统一建模语言理论测试</h1>
+      <header>
+        <table>
+          <tr>
+            <td>考试科目：<input type="text" value="统一建模语言 UML"></td>
+            <td>时间：<input type="text" value="100 分钟"></td>
+            <td>得分：<input type="text" id="acount"></td>
+          </tr>
+          <tr>
+            <td>班级：<input type="text" ></td>
+            <td>学号：<input type="text" ></td>
+            <td>姓名：<input type="text" ></td>
+          </tr>
+        </table>
+      </header>
+      <section>
+        <h3>一、填空题</h3>
+        <ol>
+          <li>
+            <label for="1_1"> UML 的中文全称是：</label>
+            <input type="text" id="1_1" name="1_1">
+          </li>
+          <li>
+            <label for="1_2"> 对象最突出的特征是：</label>
+            <input type="text" id="1_2_1" name="1_2">
+            <input type="text" id="1_2_2" name="1_2">
+            <input type="text" id="1_2_3" name="1_2">
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h3>二、选择题</h3>
+        <ol>
+          <li>
+            <p>UML 与软件工程的关系是：</p>
+            <input type="radio" name="2_1" id="2_1_1" value="A" />
+            <label for="2_1_1">(A)UML 就是软件工程</label> <br/>
+            <input type="radio" name="2_1" id="2_1_2" value="B" />
+            <label for="2_1_2">(B)UML 参与到软件工程中软件开发过程的几个阶段</label> <br/>
+            <input type="radio" name="2_1" id="2_1_3" value="C" />
+            <label for="2_1_3">(C)UML 与软件工程无关</label> <br/>
+            <input type="radio" name="2_1" id="2_1_4" value="D" />
+            <label for="2_1_4">(D)UML 是软件工程的一部分</label> <br/>
+          </li>
+          <li>
+            <p>Java 语言支持：</p>
+            <input type="radio" name="2_2" id="2_2_1" value="A" />
+            <label for="2_2_1">(A)单继承</label> <br/>
+            <input type="radio" name="2_2" id="2_2_2" value="B" />
+            <label for="2_2_2">(B)多继承</label> <br/>
+            <input type="radio" name="2_2" id="2_2_3" value="C" />
+            <label for="2_2_3">(C)单继承和多继承都支持</label> <br/>
+            <input type="radio" name="2_2" id="2_2_4" value="D" />
+            <label for="2_2_4">(D)单继承和多继承都不支持</label> <br/>
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h3>三、多选题</h3>
+        <ol>
+          <li>
+            <p>用例的粒度分为以下哪三种。</p>
+            <input type="checkbox" name="3_1" id="3_1_1" value='A'>
+            <label for="3_1_1">(A)概述级</label> <br/>
+            <input type="checkbox" name="3_1" id="3_1_2" value='B'>
+            <label for="3_1_2">(B)需求级</label> <br/>
+            <input type="checkbox" name="3_1" id="3_1_3" value='C'>
+            <label for="3_1_3">(C)用户目标级</label> <br/>
+            <input type="checkbox" name="3_1" id="3_1_4" value='D'>
+            <label for="3_1_4">(D)子功能级</label> <br/>
+          </li>
+          <li>
+            <p>类图由以下哪三部分组成。</p>
+            <input type="checkbox" name="3_2" id="3_2_1" value='A'>
+            <label for="3_2_1">(A)名称(Name)</label> <br/>
+            <input type="checkbox" name="3_2" id="3_2_2" value='B'>
+            <label for="3_2_2">(B)属性(Attribute)</label> <br/>
+            <input type="checkbox" name="3_2" id="3_2_3" value='C'>
+            <label for="3_2_3">(C)操作(Operation)</label> <br/>
+            <input type="checkbox" name="3_2" id="3_2_4" value='D'>
+            <label for="3_2_4">(D)方法（Function）</label> <br/>
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h3>四、判断题</h3>
+        <ol>
+          <li>
+            <span>用例图只是用于和客户交流和沟通的，用于确定需求。</span>
+            <label for="4_1_1">Yes</label><input type="radio" name="4_1" id="4_1_1" value="Y" />
+            <label for="4_1_2">No</label><input type="radio" name="4_1" id="4_1_2" value="N" />
+          </li>
+          <li>
+            <span>在状态图中，终止状态在一个状态图中允许有任意多个。</span>
+            <label for="4_2_1">Yes</label><input type="radio" name="4_2" id="4_2_1" value="Y" />
+            <label for="4_2_2">No</label><input type="radio" name="4_2" id="4_2_2" value="N" />
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h3>五、简答题（每题 4 分，共 20 分）</h3>
+        <ol>
+          <li>
+          <p>简述什么是模型以及模型的表现形式?</p>
+          <textarea cols="30" rows="5" id="5_1" name="5_1"></textarea>
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <input type="button" value="提交" onclick="countGarde();"/>
+      </section>
+    </form>
+  </body>
+</html>
