@@ -2,6 +2,9 @@ function Completion(name, rightAnswer, scorce) {
   Question.call(this, name, rightAnswer, scorce);
 }
 
+Completion.prototype = Object.create(Question.prototype);
+Completion.prototype.constructor = Completion;
+
 Completion.prototype.countScorce = function (answer) {
   var scorce = 0;
   var answers = [];

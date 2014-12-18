@@ -2,6 +2,9 @@ function MultipleChoice(name, rightAnswer, scorce) {
   Question.call(this, name, rightAnswer, scorce);
 }
 
+MultipleChoice.prototype = Object.create(Question.prototype);
+MultipleChoice.prototype.constructor = MultipleChoice;
+
 MultipleChoice.prototype.countScorce = function (awnser) {
 
   var value = [];
@@ -12,5 +15,5 @@ MultipleChoice.prototype.countScorce = function (awnser) {
     }
   });
 
-  return this.rightAnswer.toString() === value.toString() ? 10 : 0;
+  return this.rightAnswer.toString() === value.toString() ? this.scorce : 0;
 };
