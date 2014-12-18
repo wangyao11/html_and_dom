@@ -1,7 +1,4 @@
-function Answers(){
-
-}
-Answers.getrightAnswers = function () {
+getrightAnswers = function () {
   return [
     new Completion('1_1',['统一建模语言'],5),
     new Completion('1_2',['封装性','继承性','多态性'],5),
