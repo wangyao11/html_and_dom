@@ -5,13 +5,14 @@ function Completion(name, rightAnswer, scorce) {
 Completion.prototype = Object.create(Question.prototype);
 Completion.prototype.constructor = Completion;
 
-Completion.prototype.countScorce = function (answer) {
+Completion.prototype.countScorce = function (inputAnwser) {
   var scorce = 0;
   var answers = [];
 
-  _.forEach(answer, function(array) {
+  _.forEach(inputAnwser, function(array) {
     answers.push(array.value);
   });
+
   _this = this;
   _.forEach(this.rightAnswer, function(array) {
     if(_.contains(answers, array)) {
