@@ -19,12 +19,13 @@
     <script type="text/javascript" src="shortAnswer.js"></script>
 
     <link rel="stylesheet" href="lib/bootstrop/css/bootstrap.min.css" charset="utf-8">
+    <link rel="stylesheet" href="lib/css/main.css" charset="utf-8">
   </head>
-  <body class="container">
+  <body class="container body-font-size">
       <form class="form-horizontal">
         <header>
           <table class="table table-bordered">
-            <caption class="text-center ">
+            <caption class="text-center gray">
               <h1 class="">统一建模语言理论测试</h1>
             </caption>
             <caption>
@@ -33,15 +34,15 @@
               <td>得分：<input type="text" id="acount"></td>
             </tr>
             <tr>
-              <td>班级：<input type="text" ></td>
-              <td>学号：<input type="text" ></td>
-              <td>姓名：<input type="text" ></td>
+              <td>班级：<input  type="text" ></td>
+              <td>学号：<input  type="text" ></td>
+              <td>姓名：<input  type="text" ></td>
             </tr>
           </table>
         </header>
         <section>
           <ul class="list-group">
-            <li class="list-group-item"><h2>一、填空题</h2></li>
+            <li class="list-group-item gray"><h3>一、填空题（每空 5 分，共 20 分）</h3></li>
             <li class="list-group-item">
               <label for="1_1"> 1.UML 的中文全称是：</label>
               <input type="text" id="1_1" name="1_1">
@@ -52,13 +53,13 @@
               <input type="text" id="1_2_2" name="1_2">
               <input type="text" id="1_2_3" name="1_2">
             </li>
-          </ol>
+          </ul>
         </section>
 
         <section>
           <ul class="list-group">
-            <li class="list-group-item">
-              <h3>二、选择题</h3>
+            <li class="list-group-item gray">
+              <h3>二、选择题（每题 10 分，共 20 分）</h3>
             </li>
             <li class="list-group-item">
               <p>1.UML 与软件工程的关系是：</p>
@@ -87,8 +88,8 @@
 
         <section>
           <ul class="list-group">
-            <li class="list-group-item">
-              <h3>三、多选题</h3>
+            <li class="list-group-item gray">
+              <h3>三、多选题（每题 10 分，共 20 分）</h3>
             </li>
             <li class="list-group-item">
               <p>用例的粒度分为以下哪三种。</p>
@@ -117,8 +118,8 @@
 
         <section>
           <ul class="list-group">
-            <li class="list-group-item">
-              <h3>四、判断题</h3>
+            <li class="list-group-item gray">
+              <h3>四、判断题（每题 10 分，共 20 分）</h3>
             </li>
             <li class="list-group-item">
               <span>1.用例图只是用于和客户交流和沟通的，用于确定需求。</span>
@@ -135,19 +136,19 @@
 
         <section>
           <ul class="list-group">
-            <li class="list-group-item">
-              <h3>五、简答题（每题 4 分，共 20 分）</h3>
+            <li class="list-group-item gray">
+              <h3>五、简答题（每题 20 分，共 20 分）</h3>
             </li>
             <li class="list-group-item">
             <p>1.简述什么是模型以及模型的表现形式?</p>
-            <textarea cols="30" rows="5" id="5_1" name="5_1"></textarea>
+            <textarea cols="30" class="form-control" rows="5" id="5_1" name="5_1"></textarea>
             </li>
           </ul>
         </section>
 
         <section>
-          <div id="name">
-            <input type="button" class="btn btn-primary" value="提交" onclick="countGarde();"/>
+          <div id="name" class="">
+            <input type="button" class="btn btn-primary btn-lg " value="提交" onclick="countGarde();"/>
           </div>
         </section>
       </form>

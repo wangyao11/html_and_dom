@@ -1,0 +1,12 @@
+input{
+  border: none;
+  border-bottom:1px solid;
+}
+
+.gray {
+  background-color: gainsboro;
+}
+
+.body-font-size {
+  font-size: large;
+}
