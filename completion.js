@@ -8,9 +8,10 @@ Completion.prototype.constructor = Completion;
 Completion.prototype.countScorce = function (answer) {
   var scorce = 0;
   var answers = [];
-  for (var i = 0; i < answer.length; i++) {
-    answers.push(answer[i].value);
-  }
+
+  _.forEach(answer, function(array) {
+    answers.push(array.value);
+  });
   _this = this;
   _.forEach(this.rightAnswer, function(array) {
     if(_.contains(answers, array)) {
