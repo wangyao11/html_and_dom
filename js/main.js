@@ -1,13 +1,13 @@
 function countGarde() {
-  var scorce = 0;
+  var score = 0;
   var questions = Question.all();
 
   _.forEach(questions, function(question){
     var inputElement = document.getElementsByName(question.name);
-    scorce += question.calculateScorce(inputElement);
+    score += question.calculateScorce(inputElement);
   });
 
-  document.getElementById('acount').value = scorce;
+  document.getElementById('score').value = score;
 
   return false;
 }

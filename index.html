@@ -22,7 +22,7 @@
   </head>
   <body class="container">
     <form class="form-horizontal">
-      <header>
+      <header style="box-shadow:1px 1px 1px 1px;">
         <table class="table">
           <caption class="text-center gray">
             <h1 class="">统一建模语言理论测试</h1>
@@ -31,57 +31,70 @@
             <td class="form-group">
               <label for="subject" class="col-sm-4 control-label">考试科目：</label>
               <div class="col-xs-6">
-                <input type="text" class="form-control" id="subject" value="统一建模语言 UML" disabled></td>
+                <input type="text" class="form-control" id="subject" value="统一建模语言 UML" disabled>
               </div>
+            </td>
             <td>
               <label for="date" class="col-sm-4 control-label">时间：</label>
               <div class="col-xs-6">
-                <input type="text" class="form-control col-xs-4" id="date" value="100 分钟" disabled></td>
+                <input type="text" class="form-control" id="date" value="100 分钟" disabled></td>
               </div>
             <td>
               <label for="score" class="col-sm-4 control-label">得分：</label>
               <div class="col-xs-6">
-                <input type="text" class="form-control col-xs-4" id="score"></td>
+                <input type="text" class="form-control" id="score"></td>
               </div>
           </tr>
-          <tr class="row ">
+          <tr class="row">
             <td class="form-group">
               <label for="class" class="col-sm-4 control-label">班级：</label>
               <div class="col-xs-6">
-                <input id="class" class="form-control col-xs-4" type="text" >
+                <input id="class" class="form-control" type="text" >
               </div>
             </td>
             <td class="form-group">
               <label for="number" class="col-sm-4 control-label">学号：</label>
               <div class="col-xs-6">
-                <input id="number" class="form-control col-xs-4"  type="text" ></td>
+                <input id="number" class="form-control"  type="text" ></td>
               </div>
 
             <td class="form-group">
               <label for="name" class="col-sm-4 control-label">姓名：</label>
               <div class="col-xs-6">
-                <input id="name" class="form-control col-xs-4" type="text" ></td>
+                <input id="name" class="form-control" type="text" ></td>
               </div>
           </tr>
         </table>
       </header>
-      <section>
+      <section style="box-shadow:1px 1px 1px 1px;">
         <ul class="list-group">
           <li class="list-group-item gray"><h3>一、填空题（每空 5 分，共 20 分）</h3></li>
           <li class="list-group-item">
-            <label for="1_1"> 1.UML 的中文全称是：</label>
-            <input type="text" id="1_1" name="1_1">
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="1_1"> 1.UML 的中文全称是：</label>
+              <div class="col-xs-3">
+                <input type="text" class="form-control"  id="1_1" name="1_1">
+              </div>
+            </div>
           </li>
-          <li class="list-group-item">
-            <label for="1_2">2. 对象最突出的特征是：</label>
-            <input type="text" id="1_2_1" name="1_2">
-            <input type="text" id="1_2_2" name="1_2">
-            <input type="text" id="1_2_3" name="1_2">
+          <li class="list-group-item from-group">
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="1_2_1">2. 对象最突出的特征是：</label>
+              <div class="col-xs-2">
+                <input type="text" class="form-control" id="1_2_1" name="1_2">
+              </div>
+              <div class="col-xs-2">
+                <input type="text" class="form-control" id="1_2_2" name="1_2">
+              </div>
+              <div class="col-xs-2">
+                <input type="text" class="form-control" id="1_2_3" name="1_2">
+              </div>
+            </div>
           </li>
         </ul>
       </section>
 
-      <section>
+      <section style="box-shadow:1px 1px 1px 1px;">
         <ul class="list-group">
           <li class="list-group-item gray">
             <h3>二、选择题（每题 10 分，共 20 分）</h3>
@@ -111,7 +124,7 @@
         </ul>
       </section>
 
-      <section>
+      <section style="box-shadow:1px 1px 1px 1px;">
         <ul class="list-group">
           <li class="list-group-item gray">
             <h3>三、多选题（每题 10 分，共 20 分）</h3>
@@ -141,25 +154,37 @@
         </ul>
       </section>
 
-      <section>
+      <section style="box-shadow:1px 1px 1px 1px;">
         <ul class="list-group">
           <li class="list-group-item gray">
             <h3>四、判断题（每题 10 分，共 20 分）</h3>
           </li>
-          <li class="list-group-item">
-            <span>1.用例图只是用于和客户交流和沟通的，用于确定需求。</span>
-            <label for="4_1_1">Yes</label><input type="radio" name="4_1" id="4_1_1" value="Y" />
-            <label for="4_1_2">No</label><input type="radio" name="4_1" id="4_1_2" value="N" />
+          <li class="list-group-item radio">
+              <span>1.用例图只是用于和客户交流和沟通的，用于确定需求。</span>
+              <label class="radio-inline">
+                <input type="radio" name="4_1" id="4_1_1" value="Y" />
+                <span class="glyphicon glyphicon-ok text-success"></span>
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="4_1" id="4_1_2" value="N" />
+                <span class="glyphicon glyphicon-remove text-danger"></span>
+              </label>
           </li>
           <li class="list-group-item">
             <span>2.在状态图中，终止状态在一个状态图中允许有任意多个。</span>
-            <label for="4_2_1">Yes</label><input type="radio" name="4_2" id="4_2_1" value="Y" />
-            <label for="4_2_2">No</label><input type="radio" name="4_2" id="4_2_2" value="N" />
+            <label class="radio-inline">
+              <input type="radio" name="4_2" id="4_2_1" value="Y" />
+              <span class="glyphicon glyphicon-ok text-success"></span>
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="4_2" id="4_2_2" value="N" />
+              <span class="glyphicon glyphicon-remove text-danger"></span>
+            </label>
           </li>
         </ul>
       </section>
 
-      <section>
+      <section style="box-shadow:1px 1px 1px 1px;">
         <ul class="list-group">
           <li class="list-group-item gray">
             <h3>五、简答题（每题 20 分，共 20 分）</h3>
@@ -170,9 +195,11 @@
           </li>
         </ul>
       </section>
-      <footer >
-        <div id="name" class="">
-          <input type="button" class="btn btn-primary btn-lg " value="计算成绩" onclick="countGarde();"/>
+      <footer style="box-shadow:1px 1px 1px 1px;">
+        <div class="row">
+          <div  class="col-md-12 text-center">
+            <input type="button" class="btn btn-primary btn-lg " value="计算成绩" onclick="countGarde();"/>
+          </div>
         </div>
       </footer>
     </form>
