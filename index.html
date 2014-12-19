@@ -23,7 +23,7 @@
   </head>
   <body class="container">
     <form class="form-horizontal">
-      <header style="box-shadow:1px 1px 1px 1px;">
+      <header class="shadow">
         <table class="table">
           <caption class="text-center gray">
             <h1 class="">统一建模语言理论测试</h1>
@@ -67,7 +67,7 @@
           </tr>
         </table>
       </header>
-      <section style="box-shadow:1px 1px 1px 1px;">
+      <section class="shadow">
         <ul class="list-group">
           <li class="list-group-item gray"><h3>一、填空题（每空 5 分，共 20 分）</h3></li>
           <li class="list-group-item">
@@ -95,67 +95,83 @@
         </ul>
       </section>
 
-      <section style="box-shadow:1px 1px 1px 1px;">
+      <section class="shadow">
         <ul class="list-group">
           <li class="list-group-item gray">
             <h3>二、选择题（每题 10 分，共 20 分）</h3>
           </li>
           <li class="list-group-item">
-            <h4>1.UML 与软件工程的关系是：</h4>
-            <input type="radio" name="2_1" id="2_1_1" value="A" />
-            <label for="2_1_1">(A)UML 就是软件工程</label> <br/>
-            <input type="radio" name="2_1" id="2_1_2" value="B" />
-            <label for="2_1_2">(B)UML 参与到软件工程中软件开发过程的几个阶段</label> <br/>
-            <input type="radio" name="2_1" id="2_1_3" value="C" />
-            <label for="2_1_3">(C)UML 与软件工程无关</label> <br/>
-            <input type="radio" name="2_1" id="2_1_4" value="D" />
-            <label for="2_1_4">(D)UML 是软件工程的一部分</label> <br/>
+            <div class="margin-left-1">
+              <h4>1.UML 与软件工程的关系是：</h4>
+              <div class="margin-left-2">
+                <input type="radio" name="2_1" id="2_1_1" value="A" />
+                <label for="2_1_1">(A)UML 就是软件工程</label> <br/>
+                <input type="radio" name="2_1" id="2_1_2" value="B" />
+                <label for="2_1_2">(B)UML 参与到软件工程中软件开发过程的几个阶段</label> <br/>
+                <input type="radio" name="2_1" id="2_1_3" value="C" />
+                <label for="2_1_3">(C)UML 与软件工程无关</label> <br/>
+                <input type="radio" name="2_1" id="2_1_4" value="D" />
+                <label for="2_1_4">(D)UML 是软件工程的一部分</label> <br/>
+              </div>
+            </div>
           </li>
           <li class="list-group-item">
-            <h4>2.Java 语言支持：</h4>
-            <input type="radio" name="2_2" id="2_2_1" value="A" />
-            <label for="2_2_1">(A)单继承</label> <br/>
-            <input type="radio" name="2_2" id="2_2_2" value="B" />
-            <label for="2_2_2">(B)多继承</label> <br/>
-            <input type="radio" name="2_2" id="2_2_3" value="C" />
-            <label for="2_2_3">(C)单继承和多继承都支持</label> <br/>
-            <input type="radio" name="2_2" id="2_2_4" value="D" />
-            <label for="2_2_4">(D)单继承和多继承都不支持</label> <br/>
+            <div class="margin-left-1">
+              <h4>2.Java 语言支持：</h4>
+              <div class="margin-left-2">
+                <input type="radio" name="2_2" id="2_2_1" value="A" />
+                <label for="2_2_1">(A)单继承</label> <br/>
+                <input type="radio" name="2_2" id="2_2_2" value="B" />
+                <label for="2_2_2">(B)多继承</label> <br/>
+                <input type="radio" name="2_2" id="2_2_3" value="C" />
+                <label for="2_2_3">(C)单继承和多继承都支持</label> <br/>
+                <input type="radio" name="2_2" id="2_2_4" value="D" />
+                <label for="2_2_4">(D)单继承和多继承都不支持</label> <br/>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
 
-      <section style="box-shadow:1px 1px 1px 1px;">
+      <section class="shadow">
         <ul class="list-group">
           <li class="list-group-item gray">
             <h3>三、多选题（每题 10 分，共 20 分）</h3>
           </li>
           <li class="list-group-item">
-            <h4>1.用例的粒度分为以下哪三种。</h4>
-            <input type="checkbox" name="3_1" id="3_1_1" value='A'>
-            <label for="3_1_1">(A)概述级</label> <br/>
-            <input type="checkbox" name="3_1" id="3_1_2" value='B'>
-            <label for="3_1_2">(B)需求级</label> <br/>
-            <input type="checkbox" name="3_1" id="3_1_3" value='C'>
-            <label for="3_1_3">(C)用户目标级</label> <br/>
-            <input type="checkbox" name="3_1" id="3_1_4" value='D'>
-            <label for="3_1_4">(D)子功能级</label> <br/>
+            <div class="margin-left-1">
+              <h4>1.用例的粒度分为以下哪三种。</h4>
+              <div class="margin-left-2">
+                <input type="checkbox" name="3_1" id="3_1_1" value='A'>
+                <label for="3_1_1">(A)概述级</label> <br/>
+                <input type="checkbox" name="3_1" id="3_1_2" value='B'>
+                <label for="3_1_2">(B)需求级</label> <br/>
+                <input type="checkbox" name="3_1" id="3_1_3" value='C'>
+                <label for="3_1_3">(C)用户目标级</label> <br/>
+                <input type="checkbox" name="3_1" id="3_1_4" value='D'>
+                <label for="3_1_4">(D)子功能级</label> <br/>
+              </div>
+            </div>
           </li>
           <li class="list-group-item">
-            <h4>2.类图由以下哪三部分组成。</h4>
-            <input type="checkbox" name="3_2" id="3_2_1" value='A'>
-            <label for="3_2_1">(A)名称(Name)</label> <br/>
-            <input type="checkbox" name="3_2" id="3_2_2" value='B'>
-            <label for="3_2_2">(B)属性(Attribute)</label> <br/>
-            <input type="checkbox" name="3_2" id="3_2_3" value='C'>
-            <label for="3_2_3">(C)操作(Operation)</label> <br/>
-            <input type="checkbox" nam    e="3_2" id="3_2_4" value='D'>
-            <label for="3_2_4">(D)方法（Function）</label> <br/>
+            <div class="margin-left-1">
+              <h4>2.类图由以下哪三部分组成。</h4>
+              <div class="margin-left-2">
+                <input type="checkbox" name="3_2" id="3_2_1" value='A'>
+                <label for="3_2_1">(A)名称(Name)</label> <br/>
+                <input type="checkbox" name="3_2" id="3_2_2" value='B'>
+                <label for="3_2_2">(B)属性(Attribute)</label> <br/>
+                <input type="checkbox" name="3_2" id="3_2_3" value='C'>
+                <label for="3_2_3">(C)操作(Operation)</label> <br/>
+                <input type="checkbox" nam    e="3_2" id="3_2_4" value='D'>
+                <label for="3_2_4">(D)方法（Function）</label> <br/>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
 
-      <section style="box-shadow:1px 1px 1px 1px;">
+      <section class="shadow">
         <ul class="list-group">
           <li class="list-group-item gray">
             <h3>四、判断题（每题 10 分，共 20 分）</h3>
@@ -189,7 +205,7 @@
         </ul>
       </section>
 
-      <section style="box-shadow:1px 1px 1px 1px;">
+      <section class="shadow">
         <ul class="list-group">
           <li class="list-group-item gray">
             <h3>五、简答题（每题 20 分，共 20 分）</h3>
@@ -200,7 +216,7 @@
           </li>
         </ul>
       </section>
-      <footer style="box-shadow:1px 1px 1px 1px;">
+      <footer>
         <div class="row">
           <div  class="col-md-12 text-center">
             <input type="button" class="btn btn-primary btn-lg " value="计算成绩" onclick="countGarde();"/>
