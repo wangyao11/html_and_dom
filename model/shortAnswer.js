@@ -5,7 +5,7 @@ function ShortAnswer(name, rightAnswer, scorce) {
 ShortAnswer.prototype = Object.create(Question.prototype);
 ShortAnswer.prototype.constructor = ShortAnswer;
 
-ShortAnswer.prototype.countScorce = function (answer) {
+ShortAnswer.prototype.calculateScorce = function (answer) {
   var string;
   for (var i = 0; i < answer.length; i++) {
     string = answer[i].value;

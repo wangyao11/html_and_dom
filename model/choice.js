@@ -5,7 +5,7 @@ function Choice(name, rightAnswer, scorce) {
 Choice.prototype = Object.create(Question.prototype);
 Choice.prototype.constructor = Choice;
 
-Choice.prototype.countScorce = function (inputAnwser) {
+Choice.prototype.calculateScorce = function (inputAnwser) {
   var radio = _.find(inputAnwser, { checked: true });
   var radioValue = radio ? radio.value : '';
 

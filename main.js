@@ -4,7 +4,7 @@ function countGarde() {
 
   _.forEach(questions, function(question){
     var inputAnwser = document.getElementsByName(question.name);
-    scorce += question.countScorce(inputAnwser);
+    scorce += question.calculateScorce(inputAnwser);
   });
 
   document.getElementById('acount').value = scorce;

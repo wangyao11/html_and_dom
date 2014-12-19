@@ -7,6 +7,6 @@ Question.all = function(){
   return getrightAnswers();
 };
 
-Question.prototype.countScorce = function () {
+Question.prototype.calculateScorce = function () {
 
 };

@@ -5,7 +5,7 @@ function MultipleChoice(name, rightAnswer, scorce) {
 MultipleChoice.prototype = Object.create(Question.prototype);
 MultipleChoice.prototype.constructor = MultipleChoice;
 
-MultipleChoice.prototype.countScorce = function (awnser) {
+MultipleChoice.prototype.calculateScorce = function (awnser) {
 
   var value = [];
 

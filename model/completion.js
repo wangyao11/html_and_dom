@@ -5,7 +5,7 @@ function Completion(name, rightAnswer, scorce) {
 Completion.prototype = Object.create(Question.prototype);
 Completion.prototype.constructor = Completion;
 
-Completion.prototype.countScorce = function (inputAnwser) {
+Completion.prototype.calculateScorce = function (inputAnwser) {
   var scorce = 0;
   var answers = [];
 
