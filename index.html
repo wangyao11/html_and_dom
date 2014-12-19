@@ -34,12 +34,21 @@
             <td>
               <label for="date">时间：</label>
               <input type="text" id="date" value="100 分钟" disabled></td>
-            <td>得分：<input type="text" id="acount"></td>
+            <td>
+              <label for="score">得分：</label>
+              <input type="text" id="score"></td>
           </tr>
           <tr>
-            <td>班级：<input  type="text" ></td>
-            <td>学号：<input  type="text" ></td>
-            <td>姓名：<input  type="text" ></td>
+            <td>
+              <label for="class">班级：</label>
+              <input id="class" type="text" >
+            </td>
+            <td>
+              <label for="number">学号：</label>
+              <input id="number"  type="text" ></td>
+            <td>
+              <label for="name">姓名：</label>
+              <input id="name" type="text" ></td>
           </tr>
         </table>
       </header>
@@ -148,12 +157,11 @@
           </li>
         </ul>
       </section>
-
-      <section>
+      <footer >
         <div id="name" class="">
           <input type="button" class="btn btn-primary btn-lg " value="计算成绩" onclick="countGarde();"/>
         </div>
-      </section>
+      </footer>
     </form>
   </body>
 </html>
