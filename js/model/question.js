@@ -4,7 +4,7 @@ function Question(name, rightAnswer, scorce){
   this.scorce = scorce;
 }
 Question.all = function(){
-  return getrightAnswers();
+  return getQuestions();
 };
 
 Question.prototype.calculateScorce = function () {
