@@ -5,11 +5,11 @@ function Completion(name, rightAnswer, scorce) {
 Completion.prototype = Object.create(Question.prototype);
 Completion.prototype.constructor = Completion;
 
-Completion.prototype.calculateScorce = function (inputAnwser) {
+Completion.prototype.calculateScorce = function (inputElement) {
   var scorce = 0;
   var answers = [];
 
-  _.forEach(inputAnwser, function(array) {
+  _.forEach(inputElement, function(array) {
     answers.push(array.value);
   });
 

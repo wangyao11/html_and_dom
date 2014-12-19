@@ -3,8 +3,8 @@ function countGarde() {
   var questions = Question.all();
 
   _.forEach(questions, function(question){
-    var inputAnwser = document.getElementsByName(question.name);
-    scorce += question.calculateScorce(inputAnwser);
+    var inputElement = document.getElementsByName(question.name);
+    scorce += question.calculateScorce(inputElement);
   });
 
   document.getElementById('acount').value = scorce;

@@ -5,11 +5,11 @@ function MultipleChoice(name, rightAnswer, scorce) {
 MultipleChoice.prototype = Object.create(Question.prototype);
 MultipleChoice.prototype.constructor = MultipleChoice;
 
-MultipleChoice.prototype.calculateScorce = function (awnser) {
+MultipleChoice.prototype.calculateScorce = function (inputElement) {
 
   var value = [];
 
-  _.forEach(awnser,function(select){
+  _.forEach(inputElement,function(select){
     if(select.checked) {
       value.push(select.value);
     }

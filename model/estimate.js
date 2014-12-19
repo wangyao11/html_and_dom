@@ -5,8 +5,8 @@ function Estimate(name, rightAnswer, scorce) {
 Estimate.prototype = Object.create(Question.prototype);
 Estimate.prototype.constructor = Estimate;
 
-Estimate.prototype.calculateScorce = function (answer) {
-  var radio = _.find(answer, { checked: true });
+Estimate.prototype.calculateScorce = function (inputElement) {
+  var radio = _.find(inputElement, { checked: true });
   var radioValue = radio ? radio.value : '';
 
   return this.rightAnswer === radioValue ? this.scorce : 0;
