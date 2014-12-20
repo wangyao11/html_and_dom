@@ -7,8 +7,9 @@ ShortAnswer.prototype.constructor = ShortAnswer;
 
 ShortAnswer.prototype.calculateScorce = function (inputElement) {
   var string;
-  for (var i = 0; i < inputElement.length; i++) {
-    string = inputElement[i].value;
-  }
+  _.forEach(inputElement, function(array){
+    string = array.value;
+  });
+
   return this.rightAnswer === string ? this.scorce : 0;
 };
