@@ -34,17 +34,17 @@ function countGarde() {
 function hasEmptyRequiredInput(inputs) {
   var hasEmpty = false;
 
-  for (var i = 0; i < inputs.length; i++) {
-    var input = inputs[i];
+  _.forEach(inputs, function(input){
     var element = document.getElementById(input.id);
     if (element) {
-
       if (_.isEmpty(element.value)) {
         $('#' + input.id).parent().parent().addClass('has-error');
         hasEmpty = true;
+      } else {
+        $('#' + input.id).parent().parent().removeClass('has-error');
       }
     }
-  }
+  });
 
   return hasEmpty;
 }
