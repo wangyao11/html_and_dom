@@ -40,7 +40,7 @@ function hasEmptyRequiredInput(inputs) {
     if (element) {
 
       if (_.isEmpty(element.value)) {
-        $(input.id).parent().parent().attr('class','has-error');
+        $('#' + input.id).parent().parent().addClass('has-error');
         hasEmpty = true;
       }
     }
