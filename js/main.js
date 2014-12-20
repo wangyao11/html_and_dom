@@ -1,4 +1,5 @@
 function countGarde() {
+
   var requiredInputs = [
   {
     id: 'className',
@@ -15,7 +16,7 @@ function countGarde() {
   ];
 
   if (hasEmptyRequiredInput(requiredInputs)) {
-    alert('请检查并填写必填信息！');
+    $('#myModal').modal('show');
     return false;
   }
   var score = 0;

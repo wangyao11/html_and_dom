@@ -7,6 +7,7 @@
 
     <script type="text/javascript" src="lib/lodash-2.4.1/lodash.js"></script>
     <script type="text/javascript" src="lib/jquery/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrop/js/bootstrap.min.js"></script>
 
 
     <script type="text/javascript" src="js/main.js"></script>
@@ -283,10 +284,31 @@
       <footer>
         <div class="row">
           <div  class="col-md-12 text-center">
-            <input type="button" class="btn btn-primary btn-lg " value="计算成绩" onclick="countGarde();"/>
+            <input type="button" data-toggle="modal" class="btn btn-primary btn-lg " value="计算成绩" onclick="countGarde();"/>
           </div>
         </div>
       </footer>
     </form>
+
+    <!-- 模态框 -->
+    <div class="modal" id="myModal" role="dialog" data-backdrop="false" aria-labelledby="myModalLabel">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">
+              <h3>验证信息</h3>
+            </h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              请检查并填写必填信息！
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">关闭
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
