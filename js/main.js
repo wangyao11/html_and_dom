@@ -23,7 +23,7 @@ function countGarde() {
   var questions = Question.all();
 
   _.forEach(questions, function(question){
-    var inputElement = document.getElementsByName(question.name);
+    var inputElement = $('[name='+ question.name +']');
     score += question.calculateScorce(inputElement);
   });
 
