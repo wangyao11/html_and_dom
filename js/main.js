@@ -31,9 +31,9 @@ function hasEmptyRequiredInput(inputs) {
   var hasEmpty = false;
 
   _.forEach(inputs, function(input) {
-    var element = document.getElementById(input.id);
+    var element = $('#' + input.id);
     if (element) {
-      if (_.isEmpty(element.value)) {
+      if (_.isEmpty(element.val())) {
         $('#' + input.id).parent().parent().addClass('has-error');
         hasEmpty = true;
       } else {
