@@ -27,8 +27,7 @@ function countGarde() {
     score += question.calculateScorce(inputElement);
   });
 
-  document.getElementById('score').value = score;
-
+  $('#score').val(score);
   return false;
 }
 
