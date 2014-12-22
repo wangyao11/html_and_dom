@@ -1,19 +1,15 @@
 function countGarde() {
 
-  var requiredInputs = [
-  {
+  var requiredInputs = [{
     id: 'className',
     text: '班级'
-  },
-  {
+  }, {
     id: 'studentNumber',
     text: '学号'
-  },
-  {
+  }, {
     id: 'studentName',
     text: '姓名'
-  }
-  ];
+  }];
 
   if (hasEmptyRequiredInput(requiredInputs)) {
     $('#myModal').modal('show');
@@ -22,8 +18,8 @@ function countGarde() {
   var score = 0;
   var questions = Question.all();
 
-  _.forEach(questions, function(question){
-    var inputElement = $('[name='+ question.name +']');
+  _.forEach(questions, function(question) {
+    var inputElement = $('[name=' + question.name + ']');
     score += question.calculateScorce(inputElement);
   });
 
@@ -34,7 +30,7 @@ function countGarde() {
 function hasEmptyRequiredInput(inputs) {
   var hasEmpty = false;
 
-  _.forEach(inputs, function(input){
+  _.forEach(inputs, function(input) {
     var element = document.getElementById(input.id);
     if (element) {
       if (_.isEmpty(element.value)) {
